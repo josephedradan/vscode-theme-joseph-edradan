@@ -1,0 +1,21 @@
+{
+  "name": "vscode-theme-joseph-edradan",
+  "displayName": "Joseph Edradan's Theme",
+  "description": "Joseph Edradan's Theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Joseph Edradan's Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Joseph Edradan's Theme-color-theme.json"
+      }
+    ]
+  }
+}
