@@ -810,7 +810,7 @@
 		Start of PyCharm
 		####################################################################################################
 		*/
-				{
+		{
 			"scope": [
 				"emphasis",
 				"markup.italic"
@@ -1311,7 +1311,7 @@
 				"string.quoted.docstring punctuation.definition.string.begin.python"
 			],
 			"settings": {
-				"foreground": "#6A8759",
+				"foreground": "#629755",
 				"fontStyle": "italic"
 			}
 		},
@@ -1448,7 +1448,7 @@
 				"punctuation.definition.interpreted.start.sphinx"
 			],
 			"settings": {
-				"foreground": "#6A8759",
+				"foreground": "#629755",
 				"fontStyle": "italic bold underline"
 			}
 		},
@@ -1579,7 +1579,7 @@
 				"comment.line.yaml"
 			],
 			"settings": {
-				"foreground": "#6A8759"
+				"foreground": "#629755"
 			}
 		},
 		{
