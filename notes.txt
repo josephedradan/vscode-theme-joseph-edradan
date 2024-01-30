@@ -3,3 +3,8 @@ Run the debugger see your theme
 
 Command Palette
     inspect editor
+
+Upload to // Don't forget to update the version
+    vsce login
+    vsce package
+    vsce publish
