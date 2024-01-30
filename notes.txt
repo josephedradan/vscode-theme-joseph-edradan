@@ -12,7 +12,7 @@ Reference:
 
             Upload to  # Don't forget to update the version
                 vsce login  # you need to login
-                vsce package
+                vsce package 
                 vsce publish
 
         Reference:
