@@ -3,6 +3,17 @@
   "displayName": "Joseph Edradan's Theme",
   "description": "Joseph Edradan's Theme",
   "version": "0.0.1",
+  "publisher": "JosephEdradan",
+  "repository": {
+    "type": "git",
+    "url": " https://github.com/josephedradan/vscode-theme-joseph-edradan"
+  },
+  "keywords": [
+    "theme",
+    "joseph edradan",
+    "dark theme",
+    "joseph edradan theme"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },

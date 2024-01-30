@@ -1,0 +1,5 @@
+
+Run the debugger see your theme
+
+Command Palette
+    inspect editor
