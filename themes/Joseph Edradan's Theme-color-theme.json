@@ -1311,7 +1311,7 @@
 				"string.quoted.docstring punctuation.definition.string.begin.python"
 			],
 			"settings": {
-				"foreground": "#629755",
+				"foreground": "#6A8759",
 				"fontStyle": "italic"
 			}
 		},
@@ -1448,7 +1448,7 @@
 				"punctuation.definition.interpreted.start.sphinx"
 			],
 			"settings": {
-				"foreground": "#629755",
+				"foreground": "#6A8759",
 				"fontStyle": "italic bold underline"
 			}
 		},
@@ -1579,7 +1579,7 @@
 				"comment.line.yaml"
 			],
 			"settings": {
-				"foreground": "#629755"
+				"foreground": "#6A8759"
 			}
 		},
 		{
