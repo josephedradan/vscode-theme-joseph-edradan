@@ -281,13 +281,13 @@ Notes:
 			}
 		},
 		{
-			"scope": "markup.inserted",
+			"scope": "markup.inserted", // JOSEPH JUMP: VSCode's OUTPUT's "[info]"
 			"settings": {
 				"foreground": "#B5CEA8"
 			}
 		},
 		{
-			"scope": "markup.deleted",
+			"scope": "markup.deleted",  // JOSEPH JUMP: VSCode's OUTPUT's "[warning]"
 			"settings": {
 				"foreground": "#CE9178"
 			}
@@ -370,12 +370,13 @@ Notes:
 				"foreground": "#569CD6"
 			}
 		},
-		{
-			"scope": "string",
-			"settings": {
-				"foreground": "#CE9178"
-			}
-		},
+		// JOSEPH JUMP: DEFAULT STRING
+		// {
+		// 	"scope": "string",
+		// 	"settings": {
+		// 		"foreground": "#CE9178"
+		// 	}
+		// },
 		{
 			"scope": "string.tag",
 			"settings": {
@@ -973,7 +974,7 @@ Notes:
 				"punctuation.definition.template-expression.begin.js"
 			],
 			"settings": {
-				"foreground": "#A9B7C6"
+				"foreground": "#c1ccd8" // JOSEPH JUMP: Python's normal variable color  // Original #A9B7C6
 			}
 		},
 		{
@@ -1050,10 +1051,10 @@ Notes:
 				"meta.diff.header",
 				"keyword.key.toml",
 				"storage.modifier",
-				"constant.language",
+				"constant.language", // JOSEPH JUMP: VSCode's URL's and Function calls and more
 				"meta.preprocessor",
 				"entity.other.toml",
-				"variable.language",
+				"variable.language", 
 				"keyword.control.ts",
 				"storage.modifier.ts",
 				"entity.tag.tagbraces",
@@ -1106,7 +1107,7 @@ Notes:
 				"meta.link.footnote.def.restructuredtext constant.other.footnote.link.restructuredtext"
 			],
 			"settings": {
-				"foreground": "#CC7832"
+				"foreground": "#ff8420" // JOSEPH JUMP: Python's Keywords // Original #CC7832
 			}
 		},
 		{
@@ -1195,7 +1196,7 @@ Notes:
 				"meta.function-call.arguments variable.parameter.function-call.python"
 			],
 			"settings": {
-				"foreground": "#AA4926"
+				"foreground": "#ff0000E6" // JOSEPH JUMP: Python's named variable's key  // Original #AA4926
 			}
 		},
 		{
@@ -1240,7 +1241,7 @@ Notes:
 				"constant.character.format.placeholder.other.python"
 			],
 			"settings": {
-				"foreground": "#CC7832",
+				"foreground": "#ff8420", // JOSEPH JUMP: Python's Keywords // Original #CC7832
 				"fontStyle": ""
 			}
 		},
@@ -1270,7 +1271,7 @@ Notes:
 				"source.python meta.item-access meta.item-access.arguments support.type"
 			],
 			"settings": {
-				"foreground": "#8888C6"
+				"foreground": "#8f8fe7" // JOSEPH JUMP: Python's type and builtin function // Original #8888C6
 			}
 		},
 		{
@@ -1389,7 +1390,7 @@ Notes:
 				"text.html.django storage.type.customtemplatetag constant.other.tag.name"
 			],
 			"settings": {
-				"foreground": "#CC7832",
+				"foreground": "#ff8420", // JOSEPH JUMP: Python's Keywords // Original #CC7832
 				"fontStyle": "bold"
 			}
 		},
@@ -1398,7 +1399,7 @@ Notes:
 				"text.html.markdown meta.link.inline punctuation.definition.metadata"
 			],
 			"settings": {
-				"foreground": "#CC7832",
+				"foreground": "#ff8420", // JOSEPH JUMP: Python's Keywords // Original #CC7832
 				"fontStyle": "italic bold"
 			}
 		},
@@ -1686,5 +1687,40 @@ Notes:
 		// 		"foreground": "#74D349",
 		// 	}
 		// }
+		// {
+		// 	// JOSEPH JUMP: VSCode's OUTPUT's strings and "[error]"
+		// 	"scope": "string",
+		// 	"settings": {
+		// 		"foreground": "#ff0000"  
+		// 		// "foreground": "#fffa99"  // JosephCustom_windows_color_light_on_background_dark_no_retro_terminal_effect "quotes"
+		// 	}
+		// },
+		{
+			// VSCode's URL's and Function calls and more
+			"scope":["constant.language"],
+			"settings": {
+				"foreground": "#6ABAFB",  // Aramok Black's constant.language
+				// "fontStyle": "bold"
+			}
+		},
+		{
+			"scope": ["markup.inserted"], // JOSEPH JUMP: VSCode's OUTPUT's "[info]"
+			"settings": {
+				"foreground": "#00FF00"
+			}
+		},
+		{
+			"scope": ["markup.deleted"],  // JOSEPH JUMP: VSCode's OUTPUT's "[warning]"
+			"settings": {
+				"foreground": "#FFFF00"
+			}
+		},
+		{
+			"scope": [""],  // JOSEPH JUMP: VSCode's OUTPUT's "[error]"  // TODO: FIGURE OUT WHAT REPRESENTS "[error]"
+			"settings": {
+				"foreground": "#ff0000"
+			}
+		},
+		
 	]
 }
