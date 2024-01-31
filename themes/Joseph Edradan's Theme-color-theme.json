@@ -1271,7 +1271,7 @@ Notes:
 				"source.python meta.item-access meta.item-access.arguments support.type"
 			],
 			"settings": {
-				"foreground": "#8f8ff5" // JOSEPH JUMP: Python's type and builtin function // Original #8888C6
+				"foreground": "#8686e7" // JOSEPH JUMP: Python's type and builtin function // Original #8888C6 // Former #8f8ff5
 			}
 		},
 		{
