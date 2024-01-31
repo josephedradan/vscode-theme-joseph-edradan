@@ -1,3 +1,15 @@
+/*
+Notes:
+	My colors based on
+		JosephCustom_windows_color_light_on_background_dark_no_retro_terminal_effect
+
+	Color analysis stuff
+		https://www.colorhexa.com
+
+	Hex numbers 0 to 100 for opacity
+		https://davidwalsh.name/hex-opacity
+
+*/
 {
 	"name": "Joseph Edradan's Theme",
 	"colors": {
@@ -5,7 +17,7 @@
 		"activityBar.background": "#000000",
 		"activityBar.border": "#000000",  // TAGS: SIDE COLOR BOARDER
 		"activityBar.foreground": "#ffcc00",
-		"activityBar.inactiveForeground": "#888888",
+		"activityBar.inactiveForeground": "#8b8b8b",
 		"activityBarBadge.background": "#666666",
 		"activityBarBadge.foreground": "#ffffff",
 		"badge.background": "#ff0000",
@@ -27,28 +39,31 @@
 		"dropdown.background": "#000000",
 		"dropdown.border": "#999999",
 		"editor.background": "#000000",
-		"editor.findMatchBackground": "#ff802bcc",
-		"editor.findMatchBorder": "#ff802b",
-		"editor.findMatchHighlightBackground": "#ff444437",
-		"editor.findMatchHighlightBorder": "#ff4444aa",
-		"editor.findRangeHighlightBackground": "#3a3a3a",
+		"editor.findMatchBackground": "#00FF001A", // Green at 10% opacity // Search match selected background
+		"editor.findMatchBorder": "#00FF00CC", // Green at 80% opacity // Search match selected border
+		"editor.findMatchHighlightBackground": "#ff000040", // White at 25% opacity // Search match background
+		"editor.findMatchHighlightBorder": "#ff0000CC", // White at 80% opacity // Search match border
+		"editor.findRangeHighlightBackground": "#3a3a3a", // IDK
 		"editor.foreground": "#ffffff",
-		"editor.inactiveSelectionBackground": "#3a3d41",
-		"editor.lineHighlightBackground": "#1c1c1c",
-		"editor.rangeHighlightBackground": "#3a3a3a",
-		"editor.selectionBackground": "#ffffff33",
-		"editor.selectionForeground": "#000000cc",
-		"editor.selectionHighlightBackground": "#e9ba0083",
+		"editor.inactiveSelectionBackground": "#ffffff1A", // White at 10% opacity // The text that you highlighted when inactive
+		"editor.lineHighlightBackground": "#ffffff0D", // White at 5% opacity // Highlight for the current line you are on
+		"editor.rangeHighlightBackground": "#ffffff1A", // White at 10% opacity // Highlight not made by you, but made by some other system
+		"editor.selectionBackground": "#ffffff33", // White at 20% opacity // The text that you highlighted's background 
+		"editor.selectionForeground": "#ffffff80", // White at 50% opacity // The text that you highlighted's foreground
+		"editor.selectionHighlightBackground": "#FFFF004D", // Yellow at 30% opacity // When your highlighted text is found elsewhere 
 		"editor.wordHighlightBackground": "#575757",
 		"editorBracketMatch.background": "#ff0000",
 		"editorCursor.background": "#5f3b23",
 		"editorCursor.foreground": "#ffffff",
 		"editorGroup.border": "#666666",
-		"editorGroup.dropBackground": "#2b2b5acc",
+		"editorGroup.dropBackground": "#ffcc0040", // Tangerine yellow at 25% // When you move an editor (the file's tab) over to some legal placable area
 		"editorGroupHeader.tabsBackground": "#000000",
-		"editorGutter.addedBackground": "#014601",
-		"editorGutter.background": "#050505",
+		
+		// This is the gutter next to your editor
+		"editorGutter.addedBackground": "#00FF00CC", // Any newline added to the editor
+		"editorGutter.background": "#000000",
 		"editorGutter.commentRangeForeground": "#f1ff28",
+
 		"editorIndentGuide.activeBackground1": "#707070",
 		"editorIndentGuide.background1": "#404040",
 		"editorWhitespace.foreground": "#ffffff40",
@@ -57,12 +72,16 @@
 		"input.background": "#000000",
 		"input.border": "#999999",
 		"input.placeholderForeground": "#a6a6a6",
-		"list.activeSelectionBackground": "#222222",
-		"list.activeSelectionForeground": "#ffcc00",
-		"list.dropBackground": "#383b3d",
+		
+		"list.activeSelectionBackground": "#222222", // TAGS: BACKGROUND 2
+		"list.activeSelectionForeground": "#ffcc00", // Selected items in a list
+		"list.dropBackground": "#666666",  // When you move an item in a list
 		"list.hoverBackground": "#333333", // TAGS: HOVER COLOR
+
+		// Menu when you click one of the buttons at the top
 		"menu.background": "#000000",
-		"menu.foreground": "#81fa68",
+		"menu.foreground": "#fffa99",
+
 		"panel.background": "#000000",
 		"panel.border": "#ff0000",
 		"panelTitle.activeBorder": "#ff0000",
@@ -75,8 +94,10 @@
 		"peekViewTitle.background": "#000099",
 		"progressBar.background": "#ff5500",
 		"scrollbarSlider.background": "#cccccc66",
-		"settings.numberInputBackground": "#292929",
-		"settings.textInputBackground": "#292929",
+
+		// Input text boxes
+		"settings.numberInputBackground": "#222222",
+		"settings.textInputBackground": "#222222",
 
 		// The side bar, NOT THE SIDE BAR WITH THE ICONS WHICH IS activityBar
 		"sideBar.background": "#000000",
@@ -93,10 +114,10 @@
 		"statusBar.foreground": "#ffffff",
 		
 		// The bar at the bottom
-		"statusBarItem.remoteBackground": "#007acc",  // #ffcc00
+		"statusBarItem.remoteBackground": "#33c5ff", // The bottom left button looking thingy
 		"statusBarItem.remoteForeground": "#ffffff",
 		
-		// The tabs you see in you file editor area
+		// The tabs you see in you file editor area (The tabs you see on top of files that you are editing)
 		"tab.activeBackground": "#000000",
 		"tab.activeBorder": "#ffcc00",
 		"tab.activeForeground": "#ffcc00",
@@ -104,7 +125,8 @@
 		"tab.hoverBackground": "#222222", // TAGS: SIDE BAR TAB, BACKGROUND 2, FILE TAB
 		"tab.inactiveBackground": "#000000",
 		"tab.inactiveForeground": "#cccccc",
-		"tab.inactiveModifiedBorder": "#ffcc00", // idk what this one is
+		"tab.inactiveModifiedBorder": "#ffcc00", // IDK
+
 		"terminal.ansiBlack": "#000000",
 		"terminal.ansiBlue": "#33c5ff",
 		"terminal.ansiBrightBlack": "#ffbb00",
@@ -128,7 +150,7 @@
 		
 		// The menu bar at the top
 		"titleBar.activeBackground": "#000000",
-		"titleBar.activeForeground": "#888888",
+		"titleBar.activeForeground": "#999999",
 		"titleBar.border": "#000000",
 		"tree.indentGuidesStroke": "#ffcc00",
 		"welcomePage.background": "#666666",
