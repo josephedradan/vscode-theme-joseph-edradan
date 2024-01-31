@@ -41,8 +41,8 @@ Notes:
 		"editor.background": "#000000",
 		"editor.findMatchBackground": "#00FF001A", // Green at 10% opacity // Search match selected background
 		"editor.findMatchBorder": "#00FF00CC", // Green at 80% opacity // Search match selected border
-		"editor.findMatchHighlightBackground": "#ff000040", // White at 25% opacity // Search match background
-		"editor.findMatchHighlightBorder": "#ff0000CC", // White at 80% opacity // Search match border
+		"editor.findMatchHighlightBackground": "#ff000040", // Red at 25% opacity // Search match background
+		"editor.findMatchHighlightBorder": "#ff0000CC", // Red at 80% opacity // Search match border
 		"editor.findRangeHighlightBackground": "#3a3a3a", // IDK
 		"editor.foreground": "#ffffff",
 		"editor.inactiveSelectionBackground": "#ffffff1A", // White at 10% opacity // The text that you highlighted when inactive
@@ -974,7 +974,9 @@ Notes:
 				"punctuation.definition.template-expression.begin.js"
 			],
 			"settings": {
-				"foreground": "#c1ccd8" // JOSEPH JUMP: Python's normal variable color  // Original #A9B7C6
+				// JOSEPH JUMP: Python's normal variable color
+				// "foreground": "#A9B7C6", // Original
+				"foreground": "#c1ccd8", // Brighter
 			}
 		},
 		{
@@ -1107,7 +1109,9 @@ Notes:
 				"meta.link.footnote.def.restructuredtext constant.other.footnote.link.restructuredtext"
 			],
 			"settings": {
-				"foreground": "#ff8420" // JOSEPH JUMP: Python's Keywords // Original #CC7832
+				// JOSEPH JUMP: Python's Keywords 
+				// "foreground": "#CC7832" // Original
+				"foreground": "#ff8420" 
 			}
 		},
 		{
@@ -1136,7 +1140,9 @@ Notes:
 				"support.variable.automatic variable.other.member.powershell"
 			],
 			"settings": {
-				"foreground": "#9876AA"
+				// JOSEPH JUMP: Python's context manager name 
+				// "foreground": "#9876AA" // Original
+				"foreground": "#e1adff" // Brighter whatever color this is
 			}
 		},
 		{
@@ -1174,7 +1180,9 @@ Notes:
 				"entity.name.function.section.delete punctuation.definition.section.reg"
 			],
 			"settings": {
-				"foreground": "#BBB529"
+				// JOSEPH JUMP: Python's Decorators
+				// "foreground": "#BBB529" // Original
+				"foreground": "#ebe300"
 			}
 		},
 		{
@@ -1196,7 +1204,12 @@ Notes:
 				"meta.function-call.arguments variable.parameter.function-call.python"
 			],
 			"settings": {
-				"foreground": "#ff0000CC" // JOSEPH JUMP: Python's named variable's key  // Original #AA4926
+				// JOSEPH JUMP: Python's named variable's key
+				// "foreground": "#AA4926" // Original 
+				// "foreground": "#c41e3a" // Cardinal
+				// "foreground": "#b22222" // Firebrick
+				// "foreground": "#db0000" // A darker red
+				"foreground": "#cf0000" // A little more darker red
 			}
 		},
 		{
@@ -1241,7 +1254,9 @@ Notes:
 				"constant.character.format.placeholder.other.python"
 			],
 			"settings": {
-				"foreground": "#ff8420", // JOSEPH JUMP: Python's Keywords // Original #CC7832
+				// JOSEPH JUMP: Python's Keywords
+				// "foreground": "#CC7832",  // Original
+				"foreground": "#ff8420", 
 				"fontStyle": ""
 			}
 		},
@@ -1252,7 +1267,9 @@ Notes:
 				"support.variable.magic.python"
 			],
 			"settings": {
-				"foreground": "#B200B2"
+				// JOSEPH JUMP: Python's magic method | double underscore method | dunder method
+				// "foreground": "#B200B2" // Original
+				"foreground": "#ff00ff" // Brighter whatever color this is
 			}
 		},
 		{
@@ -1271,7 +1288,11 @@ Notes:
 				"source.python meta.item-access meta.item-access.arguments support.type"
 			],
 			"settings": {
-				"foreground": "#8686e7" // JOSEPH JUMP: Python's type and builtin function // Original #8888C6 // Former #8f8ff5
+				// JOSEPH JUMP: Python's type and builtin function 
+				// "foreground": "#8888C6"  // Original #8888C6, #8f8ff5, #8686e7, #a0a0ff
+				// "foreground": "#8f8ff5"  
+				"foreground": "#8686e7" 
+				// "foreground": "#a0a0ff" // Bright, but a little too much no?
 			}
 		},
 		{
@@ -1308,7 +1329,8 @@ Notes:
 				"string.quoted.binary.single punctuation.definition.string.begin.python"
 			],
 			"settings": {
-				"foreground": "#FFC66D",
+				// JOSEPH JUMP: Python's functions
+				"foreground": "#FFC66D", // Original 
 				"fontStyle": ""
 			}
 		},
@@ -1350,7 +1372,8 @@ Notes:
 				"string.quoted.docstring punctuation.definition.string.begin.python"
 			],
 			"settings": {
-				"foreground": "#629755",
+				// JOSEPH JUMP: Python's Multiline comments
+				"foreground": "#629755", // Original
 				"fontStyle": "italic"
 			}
 		},
@@ -1390,7 +1413,9 @@ Notes:
 				"text.html.django storage.type.customtemplatetag constant.other.tag.name"
 			],
 			"settings": {
-				"foreground": "#ff8420", // JOSEPH JUMP: Python's Keywords // Original #CC7832
+				// JOSEPH JUMP: Python's Keywords
+				// "foreground": "#CC7832",  // Original 
+				"foreground": "#ff8420",
 				"fontStyle": "bold"
 			}
 		},
@@ -1399,7 +1424,8 @@ Notes:
 				"text.html.markdown meta.link.inline punctuation.definition.metadata"
 			],
 			"settings": {
-				"foreground": "#ff8420", // JOSEPH JUMP: Python's Keywords // Original #CC7832
+				// "foreground": "#CC7832",  // Original 
+				"foreground": "#ff8420",
 				"fontStyle": "italic bold"
 			}
 		},
