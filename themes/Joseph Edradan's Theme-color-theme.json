@@ -1196,7 +1196,7 @@ Notes:
 				"meta.function-call.arguments variable.parameter.function-call.python"
 			],
 			"settings": {
-				"foreground": "#ff0000E6" // JOSEPH JUMP: Python's named variable's key  // Original #AA4926
+				"foreground": "#ff0000CC" // JOSEPH JUMP: Python's named variable's key  // Original #AA4926
 			}
 		},
 		{
@@ -1271,7 +1271,7 @@ Notes:
 				"source.python meta.item-access meta.item-access.arguments support.type"
 			],
 			"settings": {
-				"foreground": "#8f8fe7" // JOSEPH JUMP: Python's type and builtin function // Original #8888C6
+				"foreground": "#8f8ff5" // JOSEPH JUMP: Python's type and builtin function // Original #8888C6
 			}
 		},
 		{
