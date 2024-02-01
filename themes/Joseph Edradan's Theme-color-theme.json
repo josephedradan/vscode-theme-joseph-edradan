@@ -1193,11 +1193,11 @@ Notes:
 				"meta.function-call.generic.python", // Python's callable called
 				// "meta.function-call.python", // IDK
 
+				// IF YOU GOING TO UNCOMMENT 1 OF THE 2 LINES BELOW THEN YOU WANT TO CONSIDER UNCOMMENT 1 OF THE 2 LINES AFTER THE 2 FIRST LINES FOR CONSISTENCY
 				// "meta.function.parameters.python", // Python Callable's variable type hints
-				"meta.function.python", // Python Callable's variable type hints and return type hints
-				
-				// "meta.item-access.arguments.python" // Python's type hint excluding the first outer type hint
-				"meta.item-access.python" // Python's type hint
+				// "meta.function.python", // Python Callable's variable type hints and return type hints
+				// "meta.item-access.arguments.python" // Python's type hint excluding the first outer type hint // Also includes dictionary structure
+				// "meta.item-access.python" // Python's type hint // Also includes dictionary structure
 			],
 			"settings": {
 				// JOSEPH JUMP: Python's functions | Java Class | Java Method | Python's callable
@@ -1433,11 +1433,6 @@ Notes:
 		{
 			"scope": [
 				"variable.language.special",
-			
-				// "variable.parameter.function.language.python", // Python Callable variables
-				// "meta.function.parameters.python", // Python Callable variable types
-				// "meta.function.python", // Python Callable types
-				
 			],
 			"settings": {
 				// JOSEPH JUMP: Python's self | Python's cls
@@ -1462,6 +1457,20 @@ Notes:
 				// "foreground": "#ca00ac",
 				// "foreground": "#b9009e",
 				"foreground": "#ad0093", // Current
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"constant.numeric",
+				"constant.other.color.rgb-value.hex.css",
+				"string.regexp keyword.operator.quantifier"
+			],
+			"settings": {
+				// JOSEPH JUMP: Python's numbers
+				// "foreground": "#6897BB", // Original
+				// "foreground": "#81bce9", // Brighter
+				"foreground": "#60baff", // Deeper
 				"fontStyle": ""
 			}
 		},
@@ -1739,17 +1748,7 @@ Notes:
 			}
 		},
 
-		{
-			"scope": [
-				"constant.numeric",
-				"constant.other.color.rgb-value.hex.css",
-				"string.regexp keyword.operator.quantifier"
-			],
-			"settings": {
-				"foreground": "#6897BB",
-				"fontStyle": ""
-			}
-		},
+
 		{
 			"scope": [
 				"string.url",
