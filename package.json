@@ -2,11 +2,7 @@
   "name": "vscode-theme-joseph-edradan",
   "displayName": "Joseph Edradan's Theme",
   "description": "Joseph Edradan's Theme",
-<<<<<<< HEAD
-  "version": "0.0.6",
-=======
   "version": "0.0.7",
->>>>>>> dev
   "publisher": "JosephEdradan",
   "repository": {
     "type": "git",
