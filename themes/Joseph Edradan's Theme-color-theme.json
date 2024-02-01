@@ -1424,6 +1424,17 @@ Notes:
 				"foreground": "#629755" // Original
 			}
 		},
+		{
+			"scope": [
+				"variable.parameter.function.language.special",
+				"variable.parameter.function.language.special.cls.python",
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#94558D",
+				"fontStyle": ""
+			}
+		},
 		// { // TODO: IDK ABOUT THIS ONE
 		// 	"scope": [
 		// 		"keyword.operator.new",
@@ -1578,17 +1589,7 @@ Notes:
 			}
 		},
 
-		{
-			"scope": [
-				"variable.parameter.function.language.special",
-				"variable.parameter.function.language.special.cls.python",
-				"variable.parameter.function.language.special.self.python"
-			],
-			"settings": {
-				"foreground": "#94558D",
-				"fontStyle": ""
-			}
-		},
+
 
 		// {
 		// 	"scope": [
