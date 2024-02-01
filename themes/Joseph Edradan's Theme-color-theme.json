@@ -1191,8 +1191,13 @@ Notes:
 
 				// Python
 				"meta.function-call.generic.python", // Python's callable called
-				// "meta.function-call.python",
+				// "meta.function-call.python", // IDK
+
+				// "meta.function.parameters.python", // Python Callable's variable type hints
+				"meta.function.python", // Python Callable's variable type hints and return type hints
 				
+				// "meta.item-access.arguments.python" // Python's type hint excluding the first outer type hint
+				"meta.item-access.python" // Python's type hint
 			],
 			"settings": {
 				// JOSEPH JUMP: Python's functions | Java Class | Java Method | Python's callable
@@ -1353,7 +1358,8 @@ Notes:
 			"settings": {
 				// JOSEPH JUMP: Python's magic method | Python's double underscore method | Python's dunder method
 				// "foreground": "#B200B2" // Original
-				"foreground": "#ff00ff" // Brighter whatever color this is
+				// "foreground": "#ff00ff" // Brighter whatever color this is
+				"foreground": "#ff59ff" // Brighter whatever color this is
 			}
 		},
 
@@ -1426,12 +1432,36 @@ Notes:
 		},
 		{
 			"scope": [
-				"variable.parameter.function.language.special",
-				"variable.parameter.function.language.special.cls.python",
-				"variable.parameter.function.language.special.self.python"
+				"variable.language.special",
+			
+				// "variable.parameter.function.language.python", // Python Callable variables
+				// "meta.function.parameters.python", // Python Callable variable types
+				// "meta.function.python", // Python Callable types
+				
 			],
 			"settings": {
-				"foreground": "#94558D",
+				// JOSEPH JUMP: Python's self | Python's cls
+				// "foreground": "#94558D", // Original
+				// "foreground": "#bd59ae",
+				// "foreground": "#ca00ac",
+				// "foreground": "#b9009e",
+				"foreground": "#ad0093", // Current
+			}
+		},
+		{
+			"scope": [
+				"variable.parameter.function.language.special",
+				"variable.parameter.function.language.special.cls.python",
+				"variable.parameter.function.language.special.self.python",
+			],
+			
+			"settings": {
+				// JOSEPH JUMP: Python's self | Python's cls
+				// "foreground": "#94558D", // Original
+				// "foreground": "#bd59ae",
+				// "foreground": "#ca00ac",
+				// "foreground": "#b9009e",
+				"foreground": "#ad0093", // Current
 				"fontStyle": ""
 			}
 		},
@@ -1600,14 +1630,6 @@ Notes:
 		// 		"foreground": "#D4D4D4"
 		// 	}
 		// },
-		{
-			"scope": [
-				"variable.language.special"
-			],
-			"settings": {
-				"foreground": "#94558D"
-			}
-		},
 
 		{
 			"scope": [
