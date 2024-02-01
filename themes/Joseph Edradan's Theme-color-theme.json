@@ -1140,8 +1140,9 @@ Notes:
 				"support.variable.automatic variable.other.member.powershell"
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's context manager name 
+				// JOSEPH JUMP: Python's context manager name | JSON key
 				// "foreground": "#9876AA" // Original
+				// "foreground": "#c296db" // Brighter than the original but not over powering
 				"foreground": "#e1adff" // Brighter whatever color this is
 			}
 		},
@@ -1267,7 +1268,7 @@ Notes:
 				"support.variable.magic.python"
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's magic method | double underscore method | dunder method
+				// JOSEPH JUMP: Python's magic method | Python's  double underscore method | Python's  dunder method
 				// "foreground": "#B200B2" // Original
 				"foreground": "#ff00ff" // Brighter whatever color this is
 			}
@@ -1372,7 +1373,7 @@ Notes:
 				"string.quoted.docstring punctuation.definition.string.begin.python"
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's Multiline comments
+				// JOSEPH JUMP: Python's multiline comments | Python's docstring | JOSEPH STRING 2
 				"foreground": "#629755", // Original
 				"fontStyle": "italic"
 			}
@@ -1413,7 +1414,7 @@ Notes:
 				"text.html.django storage.type.customtemplatetag constant.other.tag.name"
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's Keywords
+				// JOSEPH JUMP: Python's keywords
 				// "foreground": "#CC7832",  // Original 
 				"foreground": "#ff8420",
 				"fontStyle": "bold"
@@ -1424,6 +1425,7 @@ Notes:
 				"text.html.markdown meta.link.inline punctuation.definition.metadata"
 			],
 			"settings": {
+				// JOSEPH JUMP: idk
 				// "foreground": "#CC7832",  // Original 
 				"foreground": "#ff8420",
 				"fontStyle": "italic bold"
@@ -1469,7 +1471,9 @@ Notes:
 				"text.html.markdown markup.quote meta.paragraph"
 			],
 			"settings": {
-				"foreground": "#6A8759",
+				// JOSEPH JUMP: Python's string | JOSEPH STRING 1
+				// "foreground": "#6A8759", // Original
+				"foreground": "#84af6d", // Darker whatever the original color was
 				"fontStyle": ""
 			}
 		},
@@ -1486,7 +1490,9 @@ Notes:
 				"string.quoted constant.character.escape.env"
 			],
 			"settings": {
-				"foreground": "#6A8759"
+				// JOSEPH JUMP: Python's string | JOSEPH STRING 1
+				// "foreground": "#6A8759", // Original
+				"foreground": "#84af6d", // Darker whatever the original color was
 			}
 		},
 		{
@@ -1513,7 +1519,8 @@ Notes:
 				"punctuation.definition.interpreted.start.sphinx"
 			],
 			"settings": {
-				"foreground": "#629755",
+				// JOSEPH JUMP: sphinx idk | JOSEPH STRING 2
+				// "foreground": "#629755", // Original
 				"fontStyle": "italic bold underline"
 			}
 		},
@@ -1644,7 +1651,8 @@ Notes:
 				"comment.line.yaml"
 			],
 			"settings": {
-				"foreground": "#629755"
+				// JOSEPH JUMP: yaml comment | JOSEPH STRING 2
+				"foreground": "#629755" // Original
 			}
 		},
 		{
