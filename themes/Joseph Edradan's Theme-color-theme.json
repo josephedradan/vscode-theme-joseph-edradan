@@ -1870,9 +1870,9 @@ Notes:
 
 				When 
 					"semanticHighlighting": true,
-				is enaled on the root of this json file,
+				is enabled on the root of this json file,
 				then you you need to make sure that keys in the "scope" are not very aggressive so that
-				your semantic textmate targets overwrite properly.
+				your semantic TextMates targets overwrite properly.
 
 				If you want to specify a specific scope target, then you need to add a space
 				between the scope target and then the next scope target. 
@@ -1917,7 +1917,7 @@ Notes:
 
 				"constant.other.caps",
 				"entity.name.class",
-				"entity.name.type.module",
+				"entity.name.type.module",  // Programming language imported thing
 				// "entity.name.type",  // Programming language type // VERY AGGESSIVE
 				"entity.other.attribute-name",
 				"keyword.operator", // All Operators
@@ -1934,14 +1934,14 @@ Notes:
 				"support.class.dom",
 				// "support.class", // Programming language type // VERY AGGESSIVE
 				"support.type",
-				// "support.variable", // AGGRESSIVE
+				// "support.variable", // AGGRESSIVE, IDK WHA FOR
 				"variable.other.object.property",
 				"variable.other.object",
 				"variable.other.readwrite.alias",
-				"variable.other.readwrite",
+				// "variable.other.readwrite", // VERY AGGRESSIVE, AFFECT Python Variable called e.g. NamespaceArgparse
 				"variable.other.definition",
 								
-				// "variable.parameter", // VERY AGGRESSIVE
+				// "variable.parameter", // VERY AGGRESSIVE, WILL REMOVE Python Callable called's key, WILL MAKE ALL PARMETERS THE SAME COLOR
 
 				// "meta.class.inheritance",
 				// "meta.definition.variable.name",
@@ -1949,16 +1949,20 @@ Notes:
 				// "meta.return-type",
 
 				// Java (These should be the default colors and should be over written)
-				"variable.parameter.java",
+				// "variable.parameter.class.java",  // Idk, may not work
+				// "variable.parameter.function-call.java", // Idk, may not work
+				
+				// "variable.parameter.java",
 
-				"storage.type.groovy",
+
+				// "storage.type.groovy", // Java Type // VERY AGGRESSIVE
 				"storage.type.generic.groovy",
 				"storage.type.primitive.groovy",
 				"storage.type.parameters.groovy",
 				"storage.type.annotation.groovy",
 				"storage.type.object.array.groovy",
 				"storage.type.primitive.array.groovy",
-				"storage.type.java",
+				// "storage.type.java", // Java Type // VERY AGGRESSIVE
 				"storage.type.token.java",
 				"storage.type.generic.java",
 				"storage.type.primitive.java",
@@ -2049,7 +2053,7 @@ Notes:
 				"storage.type.function",
 				"storage.type.powershell",
 				"storage.type.ts",
-				"storage.type",
+				// "storage.type", // Programming Langauge Type // VERY AGGRESSIVE
 				"string.interpolated punctuation.definition.shell",
 				"string.quoted punctuation.definition.shell",
 				"string.quoted.single.basic.line.toml",
@@ -2199,13 +2203,14 @@ Notes:
 		*/
 		{
 			"scope": [
-
-				// "entity.name.type.class",  // YOU WANT THIS // VERY AGGRESSIVE // TODO: UNCOMMENT ME LATER
-				// "entity.name.function", // ALL FUNCTIONS // VERY AGGRESSIVE
+				
+				// "meta.class", // VERY AGGRESSIVE  // Java <>, Java Variable of some kind, Python Class Name
+				
+				// "entity.name.type.class", // VERY AGGRESSIVE // Python Builtin, Python Classes, Java HashSet, Java ArrayList
+				// "entity.name.function", // VERY AGGRESSIVE // Python FUNCTIONS EVEN BUILTINS
 
 				// // Interesting 3 below
 				// "support.function", // All Callables // TOO AGGRESSIVE
-				// "entity.name.function", // All Callables, Includes Java
 
 				// "support.constant.handlebars",
 				// "string.quoted.binary.single.python",
@@ -2223,11 +2228,10 @@ Notes:
 				// "meta.function-call.with-arguments", // Programming language function
 
 				// Java
-				"entity.name.function.java",
-				"keyword.java",
+
 				// "meta.definition.variable.java",
 				// "meta.function-call.java",
-				// "meta.method.body.java",
+				// "meta.method.body.java", // VERY AGGRESSIVE AND NOT WHAT I WANT
 				// "source.java", // VERY AGGRESSIVE AND NOT WHAT I WANT
 				// "storage.type.java", // IDK BUT IT IS AGGRESSIVE
 				
@@ -2237,11 +2241,16 @@ Notes:
 				// "meta.method.java",
 
 				/* 
-				####################
-				Java Section 
+				########################################
+				Java Section
+				########################################
 				*/
+				
+				"entity.name.type.class.java", // Java Class name
+				"entity.name.function.java", // Java Method
+				"keyword.java",
 
-				"storage.type.groovy",
+				"storage.type.groovy", // Java Variables and more // VERY AGGRESSIVE
 				"storage.type.generic.groovy",
 				"storage.type.parameters.groovy",
 				"storage.type.annotation.groovy",
@@ -2249,28 +2258,40 @@ Notes:
 				"storage.type.object.array.groovy", // JOSEPH JAVA TYPE 1 
 				"storage.type.primitive.array.groovy", // JOSEPH JAVA TYPE 1 
 
-				"storage.type.java",
+				"storage.type.java", // Java Variables and more // VERY AGGRESSIVE BUT YOU NEED IT I THINK
 				"storage.type.token.java",
 				"storage.type.generic.java",
 				"storage.type.annotation.java",
 				"storage.type.primitive.java", // JOSEPH JAVA TYPE 1 
 				"storage.type.object.array.java", // JOSEPH JAVA TYPE 1 
 				"storage.type.primitive.array.java", // JOSEPH JAVA TYPE 1 
+				// "meta.definition.variable.java", // Java <> and more // DO NOT WANT
+
+				// "storage.type.java",
+				// "meta.definition.variable.java",
+				// "meta.method.body.java",
+				// "meta.method.java",
+				// "meta.class.body.java",
+				// "meta.class.java",
+				// "source.java",
+
 				
-				/* 
-				####################
-				*/
-
-
+				// "support.type",
 				// "meta.method.identifier.java",
 
-				// "entity.name.type.class.java",
 				// "meta.class.identifier.java",
 	
 				// "entity.other.inherited-class.java",
 				// "meta.definition.class.implemented.interfaces.java",
-
+				
+				
+				
+				/* 
+				####################
+				*/
+				
 				// Python
+				// "entity.name.type.class.python", // Python Class Name
 				"entity.name.function.python",  // Python Function defined, Python Method defined, NO BUILTIN FUNCTIONS  // YOU WANT THIS
 				"meta.function-call.generic.python", // Python Function called, Python Method called, NO BUILTIN CALLED  // YOU WANT THIS
 				
@@ -2331,7 +2352,7 @@ Notes:
 				// "entity.name.function",
 
 				// "entity.name.type", // Programming Type
-
+				
 
 			],
 			"settings": {
@@ -2377,10 +2398,10 @@ Notes:
 		},
 		/*
 		####################################################################################################
-		Speical keywords
+		Special keywords
 			Notes:
-				Python Builtins
-				Programming primativess
+				Python Built-ins
+				Programming primitives
 		####################################################################################################
 		*/
 		{
@@ -2437,7 +2458,7 @@ Notes:
 
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's type and builtin function 
+				// JOSEPH JUMP: Python's type and built-in function 
 				// "foreground": "#8888C6",  // Original
 				// "foreground": "#8686e7", 
 				"foreground": "#8f8ff5",  // Current
@@ -2465,7 +2486,7 @@ Notes:
 
 				"variable.css",
 				"variable.other.less",
-				// "variable.other.property", // Programming langauge object.property  // VERY AGGRESSIVE
+				// "variable.other.property", // Programming language object.property  // VERY AGGRESSIVE
 				"variable.scss",
 
 				// JSON
@@ -2496,9 +2517,11 @@ Notes:
 				"meta.function-call.arguments variable.parameter.function-call.python",
 
 				// "variable.parameter.function-call.python",
-				// "meta.function-call.arguments.python",
+				// "meta.function-call.arguments.python",  // Python Callable called's arguments
 				// "meta.function-call.python",
 				// "source.python",
+
+				// "variable.parameter.java", // Java Method's parameters (Not augments) 
 
 			],
 			"settings": {
@@ -2539,13 +2562,13 @@ Notes:
 		},
 		{
 			"scope": [
-				// "support.function.magic", // Programming languaeg, Python keyword "in"
+				// "support.function.magic", // Programming language, Python keyword "in"
 				// "support.function.magic.python", // Python keyword "in" 
 				"support.variable.magic.python",
 				
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's magic method | Python's double underscore method | Python's dunder method
+				// JOSEPH JUMP: Python's magic method | Python's double underscore method | Python's magic method
 				// "foreground": "#B200B2" // Original
 				// "foreground": "#ff00ff" // Brighter whatever color this is
 				"foreground": "#ff59ff" // Brighter whatever color this is

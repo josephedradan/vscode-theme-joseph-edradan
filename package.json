@@ -2,7 +2,7 @@
   "name": "vscode-theme-joseph-edradan",
   "displayName": "Joseph Edradan's Theme",
   "description": "Joseph Edradan's Theme",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "publisher": "JosephEdradan",
   "repository": {
     "type": "git",
@@ -26,6 +26,11 @@
         "label": "Joseph Edradan's Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Joseph Edradan's Theme-color-theme.json"
+      },
+      {
+        "label": "Joseph Edradan's Theme testing",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Joseph Edradan's Theme-color-theme-testing.json"
       }
     ]
   }
