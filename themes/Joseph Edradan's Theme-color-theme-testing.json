@@ -1,0 +1,326 @@
+{
+	"name": "Joseph Edradan's Theme Testing",
+	"semanticHighlighting": true,
+	"colors": {
+		//This is the most left bar, the one with the icons
+		"activityBar.background": "#000000",
+		"activityBar.border": "#000000",  // TAGS: SIDE COLOR BOARDER
+		"activityBar.foreground": "#ffcc00",
+		"activityBar.inactiveForeground": "#8b8b8b",
+		"activityBarBadge.background": "#666666",
+		"activityBarBadge.foreground": "#ffffff",
+		"badge.background": "#ff0000",
+		"badge.foreground": "#ffffff",
+
+		// The below relate to the file path
+		"breadcrumb.activeSelectionForeground": "#ffcc00",  // This is when you move with your keyboard // #00ff00
+		"breadcrumb.background": "#000000",
+		"breadcrumb.focusForeground": "#ffcc00",  // This is when you move with your mouse
+		"breadcrumb.foreground": "#cccccc",
+		"breadcrumbPicker.background": "#222222",
+
+		// Buttons found in the sub tabs of the side bar
+		"button.background": "#222222", // TAGS: BACKGROUND 2
+		"button.hoverBackground": "#333333", // TAGS: HOVER COLOR
+
+		"debugToolBar.background": "#191936",
+		"debugToolBar.border": "#191936",
+		"dropdown.background": "#000000",
+		"dropdown.border": "#999999",
+		"editor.background": "#000000",
+		"editor.findMatchBackground": "#00FF001A", // Green at 10% opacity // Search match selected background
+		"editor.findMatchBorder": "#00FF00CC", // Green at 80% opacity // Search match selected border
+		"editor.findMatchHighlightBackground": "#ff000040", // Red at 25% opacity // Search match background
+		"editor.findMatchHighlightBorder": "#ff0000CC", // Red at 80% opacity // Search match border
+		"editor.findRangeHighlightBackground": "#3a3a3a", // IDK
+		"editor.foreground": "#ffffff",
+		"editor.inactiveSelectionBackground": "#ffffff1A", // White at 10% opacity // The text that you highlighted when inactive
+		"editor.lineHighlightBackground": "#ffffff0D", // White at 5% opacity // Highlight for the current line you are on
+		"editor.rangeHighlightBackground": "#ffffff1A", // White at 10% opacity // Highlight not made by you, but made by some other system
+		"editor.selectionBackground": "#ffffff33", // White at 20% opacity // The text that you highlighted's background 
+		"editor.selectionForeground": "#ffffff80", // White at 50% opacity // The text that you highlighted's foreground
+		"editor.selectionHighlightBackground": "#FFFF004D", // Yellow at 30% opacity // When your highlighted text is found elsewhere 
+		"editor.wordHighlightBackground": "#575757",
+		"editorBracketMatch.background": "#ff0000",
+		"editorCursor.background": "#5f3b23",
+		"editorCursor.foreground": "#ffffff",
+		"editorGroup.border": "#666666",
+		"editorGroup.dropBackground": "#ffcc0040", // Tangerine yellow at 25% // When you move an editor (the file's tab) over to some legal placable area
+		"editorGroupHeader.tabsBackground": "#000000",
+		
+		// This is the gutter next to your editor
+		"editorGutter.addedBackground": "#00FF00CC", // Any newline added to the editor
+		"editorGutter.background": "#000000",
+		"editorGutter.commentRangeForeground": "#f1ff28",
+
+		"editorIndentGuide.activeBackground1": "#707070",
+		"editorIndentGuide.background1": "#404040",
+		"editorWhitespace.foreground": "#ffffff40",
+		"editorWidget.background": "#000000",
+		"editorWidget.border": "#ffffff",
+		"input.background": "#000000",
+		"input.border": "#999999",
+		"input.placeholderForeground": "#a6a6a6",
+		
+		"list.activeSelectionBackground": "#222222", // TAGS: BACKGROUND 2
+		"list.activeSelectionForeground": "#ffcc00", // Selected items in a list
+		"list.dropBackground": "#666666",  // When you move an item in a list
+		"list.hoverBackground": "#333333", // TAGS: HOVER COLOR
+
+		// Menu when you click one of the buttons at the top
+		"menu.background": "#000000",
+		"menu.foreground": "#fffa99",
+
+		"panel.background": "#000000",
+		"panel.border": "#ff0000",
+		"panelTitle.activeBorder": "#ff0000",
+		"panelTitle.activeForeground": "#ffffff",
+		"peekView.border": "#0000ff",
+		"peekViewEditor.background": "#222222", // TAGS: BACKGROUND 2
+		"peekViewEditorGutter.background": "#00074b",
+		"peekViewResult.background": "#090b13",
+		"peekViewResult.fileForeground": "#7998fd",
+		"peekViewTitle.background": "#000099",
+		"progressBar.background": "#ff5500",
+		"scrollbarSlider.background": "#cccccc66",
+
+		// Input text boxes
+		"settings.numberInputBackground": "#222222",
+		"settings.textInputBackground": "#222222",
+
+		// The side bar, NOT THE SIDE BAR WITH THE ICONS WHICH IS activityBar
+		"sideBar.background": "#000000",
+		"sideBar.border": "#000000",  // TAGS: SIDE COLOR BOARDER
+		"sideBar.foreground": "#ffffff",
+
+		// THE BELOW ARE THE SUB TABS THE ARE VERTICAL
+		"sideBarSectionHeader.background": "#222222", // TAGS: SIDE BAR TAB, BACKGROUND 2
+		"sideBarSectionHeader.border": "#222222", // TAGS: SIDE BAR TAB, BACKGROUND 2
+		"sideBarTitle.foreground": "#ffffff", // SIDE BAR NAME
+		"statusBar.background": "#000000",
+		"statusBar.debuggingBackground": "#000000",
+		"statusBar.debuggingForeground": "#ffffff",
+		"statusBar.foreground": "#ffffff",
+		
+		// The bar at the bottom
+		"statusBarItem.remoteBackground": "#33c5ff", // The bottom left button looking thingy
+		"statusBarItem.remoteForeground": "#ffffff",
+		
+		// The tabs you see in you file editor area (The tabs you see on top of files that you are editing)
+		"tab.activeBackground": "#000000",
+		"tab.activeBorder": "#ffcc00",
+		"tab.activeForeground": "#ffcc00",
+		"tab.border": "#000000",
+		"tab.hoverBackground": "#222222", // TAGS: SIDE BAR TAB, BACKGROUND 2, FILE TAB
+		"tab.inactiveBackground": "#000000",
+		"tab.inactiveForeground": "#cccccc",
+		"tab.inactiveModifiedBorder": "#ffcc00", // IDK
+
+		"terminal.ansiBlack": "#000000",
+		"terminal.ansiBlue": "#33c5ff",
+		"terminal.ansiBrightBlack": "#ffbb00",
+		"terminal.ansiBrightBlue": "#839496",
+		"terminal.ansiBrightCyan": "#93a1a1",
+		"terminal.ansiBrightGreen": "#00f7ff",
+		"terminal.ansiBrightRed": "#ff0000",
+		"terminal.ansiBrightWhite": "#ffffff",
+		"terminal.ansiBrightYellow": "#00ff2a",
+		"terminal.ansiCyan": "#fffa99",
+		"terminal.ansiGreen": "#00ff2a",
+		"terminal.ansiMagenta": "#ae00ff",
+		"terminal.ansiRed": "#ff0000",
+		"terminal.ansiWhite": "#ffffff",
+		"terminal.ansiYellow": "#ffff00",
+		"terminal.background": "#000000",
+		"terminal.border": "#ff0000",
+		"terminal.foreground": "#ffffff",
+		"textLink.activeForeground": "#ffff00",
+		"textLink.foreground": "#ffcc00",
+		
+		// The menu bar at the top
+		"titleBar.activeBackground": "#000000",
+		"titleBar.activeForeground": "#999999",
+		"titleBar.border": "#000000",
+		"tree.indentGuidesStroke": "#ffcc00",
+		"welcomePage.background": "#666666",
+	},
+	"tokenColors": [
+		// {
+
+		// 	"scope": [
+		// 		"source",
+		// 		"markup.bold",
+		// 		"support.type",
+		// 		"support.class",
+		// 		// "source.python",
+		// 		"markup.heading",
+		// 		"markup.changed",
+		// 		"storage.type.cs",
+		// 		"support.variable",
+		// 		"meta.return-type",
+		// 		"keyword.operator", // All Operators
+		// 		"entity.name.type",
+		// 		"support.class.dom",
+		// 		"entity.name.class",
+		// 		"variable.parameter",
+		// 		// "meta.function-call", // All Function calls, VERY POWERFUL, SOMETIMES CANNOT BE OVERWRITTEN
+		// 		"constant.other.caps",
+		// 		"variable.other.object",
+		// 		"meta.class.inheritance",
+		// 		"entity.name.type.module",
+		// 		"storage.type.generic.cs",
+		// 		"variable.other.readwrite",
+		// 		"storage.type.variable.cs",
+		// 		"storage.type.modifier.cs",				
+		// 		"entity.other.attribute-name",
+		// 		"storage.type.function.arrow",
+		// 		"meta.definition.variable.name",
+		// 		"variable.other.object.property",
+		// 		"variable.other.readwrite.alias",
+
+		// 		// Java (These should be the default colors and should be over written)
+		// 		"storage.type.groovy",
+		// 		"storage.type.generic.groovy",
+		// 		"storage.type.primitive.groovy",
+		// 		"storage.type.parameters.groovy",
+		// 		"storage.type.annotation.groovy",
+		// 		"storage.type.object.array.groovy",
+		// 		"storage.type.primitive.array.groovy",
+		// 		"storage.type.java",
+		// 		"storage.type.token.java",
+		// 		"storage.type.generic.java",
+		// 		"storage.type.primitive.java",
+		// 		"storage.type.annotation.java",
+		// 		"storage.type.object.array.java",
+		// 		"storage.type.primitive.array.java",
+		// 		"storage.modifier.import.java",
+		// 		"storage.modifier.package.java",
+
+		// 		"punctuation.definition.template-expression.end.js",
+		// 		"punctuation.definition.template-expression.end.ts",
+		// 		"punctuation.definition.template-expression.begin.ts",
+		// 		"punctuation.definition.template-expression.begin.js",
+
+		// 		// Other stuff idk yet...
+		// 		"variable",
+				
+		// 	],
+		// 	"settings": {
+		// 		// JOSEPH JUMP: Python's normal variable color  // VARIABLE JUMP
+		// 		// "foreground": "#A9B7C6", // Original
+		// 		// "foreground": "#c1ccd8", // Brighter
+		// 		// "foreground": "#cfdae7", // Brighter
+		// 		"foreground": "#d7e2f0", // Brighter // Current
+		// 		// "foreground": "#e5f0ff", // Brighter // Too much 
+		// 	}
+		// },
+		{
+			"scope": [
+				"variable.parameter.class.python",
+				"variable.parameter.function-call.python",
+				"meta.class.inheritance support.type.metaclass.python",
+				"meta.function-call.arguments variable.parameter.function-call.python",
+				
+
+			],
+			"settings": {
+				// JOSEPH JUMP: Python's named variable's key
+				// "foreground": "#AA4926" // Original 
+				// "foreground": "#c41e3a" // Cardinal
+				// "foreground": "#b22222" // Firebrick
+				// "foreground": "#db0000" // A darker red
+				"foreground": "#cf0000" // A little more darker red
+			}
+		},
+
+
+		// {
+		// 	/* 
+		// 	Keywords part 1
+
+		// 	Notes:
+		// 		Python's Keywords 
+
+		// 	*/
+		// 	"scope": [
+		// 		"keyword",
+		// 		"storage.type",
+		// 		"keyword.shell",
+		// 		"storage.type.ts",
+		// 		"constant.keyword",
+		// 		"meta.diff.header",
+		// 		"keyword.key.toml",
+		// 		"storage.modifier",
+		// 		"constant.language", // JOSEPH JUMP: VSCode's URL's and Function calls and more
+		// 		"meta.preprocessor",
+		// 		"entity.other.toml",
+		// 		"variable.language", 
+		// 		"keyword.control.ts",
+		// 		"storage.modifier.ts",
+		// 		"entity.tag.tagbraces",
+		// 		"storage.type.function",
+		// 		"meta.var storage.type",
+		// 		"keyword.other.DML.sql",
+		// 		"constant.language.json",
+		// 		"storage.type.powershell",
+		// 		"entity.name.section.ini",
+		// 		"keyword.operator.new.ts",
+		// 		"keyword.command.batchfile",
+		// 		"keyword.control.powershell",
+		// 		"keyword.operator.at.batchfile",
+		// 		"support.function.builtin.shell",
+		// 		"punctuation.separator.comma.ts",
+		// 		"keyword.operator.expression.ts",
+		// 		"keyword.control.repeat.batchfile",
+		// 		"entity.name.tag.restructuredtext",
+		// 		"punctuation.separator.array.json",
+		// 		"constant.character.escape.js.json",
+		// 		"support.directive.restructuredtext",
+		// 		"keyword.operator.logical.batchfile",
+		// 		"keyword.control.statement.batchfile",
+		// 		"punctuation.terminator.statement.ts",
+		// 		"string.unquoted entity.name.tag.yaml",
+		// 		"string.quoted.single.basic.line.toml",
+		// 		"keyword.operator.arithmetic.batchfile",
+		// 		"keyword.operator.assignment.batchfile",
+		// 		"markup.other.command.restructuredtext",
+		// 		"keyword.operator.comparison.batchfile",
+		// 		"support.variable.automatic.powershell",
+		// 		"keyword.control.conditional.batchfile",
+		// 		"keyword.operator.redirection.batchfile",
+		// 		"keyword.other.special-method.batchfile",
+		// 		"string.quoted punctuation.definition.shell",
+		// 		"punctuation.section.embedded.end.metatag.php",
+		// 		"punctuation.section.embedded.begin.metatag.php",
+		// 		"text.html.markdown punctuation.definition.bold",
+		// 		"punctuation.separator.dictionary.key-value.json",
+		// 		"text.html.markdown punctuation.definition.italic",
+		// 		"text.html.jinja entity.other.jinja.delimiter.tag",
+		// 		"punctuation.separator.key-value.restructuredtext",
+		// 		"string.interpolated punctuation.definition.shell",
+		// 		"text.html.django entity.other.django.delimiter.tag",
+		// 		"entity.name.function.section.add entity.section.reg",
+		// 		"text.html.jinja entity.other.jinja.delimiter.variable",
+		// 		"text.html.django entity.other.django.delimiter.variable",
+		// 		"text.html.markdown meta.link.reference constant.other.reference",
+		// 		"entity.name.function.section.add punctuation.definition.section.reg",
+		// 		"meta.link.footnote.def.restructuredtext constant.other.footnote.link.restructuredtext",
+				
+		// 		// JAVA
+		// 		// "storage.type.primitive.java",
+		// 		// "meta.definition.variable.java",
+		// 		// "meta.method.body.java",
+		// 		// "meta.method.java",
+		// 		// "meta.class.body.java",
+		// 		// "meta.class.java",
+		// 		// "source.java",
+
+		// 	],
+		// 	"settings": {
+		// 		// "foreground": "#CC7832" // Original
+		// 		"foreground": "#ff8420" 
+		// 	}
+		// },
+		
+	]
+}

@@ -8,11 +8,12 @@ Reference:
             Command Palette
                 inspect editor
 
-            Upload to Marketplace  # Don't forget to update the version
+            Upload to Marketplace  # Don't forget to update the version in package.json 
                 vsce login  # you need to login
 
                 vsce package 
                 vsce publish
+
 
         Reference:
             https://www.youtube.com/watch?v=pGzssFNtWXw&t=643s
