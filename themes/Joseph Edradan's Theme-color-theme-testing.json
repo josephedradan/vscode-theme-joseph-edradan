@@ -220,7 +220,10 @@
 				"variable.parameter.function-call.python",
 				"meta.class.inheritance support.type.metaclass.python",
 				"meta.function-call.arguments variable.parameter.function-call.python",
-				
+
+				// "entity.name.function.python", // Python function defintions
+				// "entity.name.function", // Python Function defintion and Function called
+
 
 			],
 			"settings": {

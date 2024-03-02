@@ -2294,9 +2294,8 @@ Notes:
 				// "entity.name.type.class.python", // Python Class Name
 				"entity.name.function.python",  // Python Function defined, Python Method defined, NO BUILTIN FUNCTIONS  // YOU WANT THIS
 				"meta.function-call.generic.python", // Python Function called, Python Method called, NO BUILTIN CALLED  // YOU WANT THIS
-				
-				// "entity.name.function",  // AGRESSIVELY target functions, ALL FUNCTIONS
-				// "entity.name.function, meta.function-call.arguments.python",  // AGRESSIVELY target functions, ALL FUNCTIONS
+
+				// "entity.name.function",  // AGRESSIVELY TARGETS ALL FUNCTIONS // YOU MAY NOT WANT THIS
 				
 				// "meta.function-call.python", // Python Callable called and Callable called's arguments
 				// "meta.function-call.arguments.python", // Python Callable called  // THIS IS A GHETTO WAY TARGET CALLABLES GIVEN AS FUNCTION PARAMETERS
@@ -2486,16 +2485,15 @@ Notes:
 
 				"variable.css",
 				"variable.other.less",
-				// "variable.other.property", // Programming language object.property  // VERY AGGRESSIVE
+				// "variable.other.property", // Programming language object.property, Python Constant, Python attribute // VERY AGGRESSIVE
 				"variable.scss",
 
 				// JSON
 				"meta.structure.dictionary support.type.property-name.json", // Applies to JSON keys
 				
 				// Python
-				// "variable.legacy.builtin.python", // the alias word only when using Open as a context manager
+				"variable.legacy.builtin.python", // Python alias word only when using Open as a context manager
 				// "meta.structure.dictionary.key.python", // IDK what this one is, but the original skin allowed this
-				
 				
 				// JavaScript
 				"variable.other.property.js", // JavaScript object.property
@@ -2506,7 +2504,10 @@ Notes:
 				// JOSEPH JUMP: Python's context manager name | JSON key
 				// "foreground": "#9876AA" // Original
 				// "foreground": "#c296db" // Brighter than the original but not over powering
-				"foreground": "#e1adff" // Brighter whatever color this is
+				"foreground": "#e1adff", // Brighter whatever color this is
+				// "foreground": "#A5D6FF", // Experimental Blue
+				// "foreground": "#83c7ff", // Experimental Blue 1
+				// "foreground": "#83c7ff", // Experimental Blue 2
 			}
 		},
 		{
@@ -2561,14 +2562,18 @@ Notes:
 			}
 		},
 		{
+			/* 
+			JOSEPH JUMP: Python's magic method | Python's double underscore method | Python's magic method
+			*/
 			"scope": [
-				// "support.function.magic", // Programming language, Python keyword "in"
-				// "support.function.magic.python", // Python keyword "in" 
-				"support.variable.magic.python",
+				"support.function.magic", // Programming language, Python keyword "in" when __iter__(...) is aclled
+				// "support.function.magic.python", // Python Magic function, Python keyword "in" when __iter__(...) is aclled
 				
+				"support.variable.magic.python", // Python magic function being called.
+				// "meta.function.python", // Python magic function and every function parmeter...
 			],
 			"settings": {
-				// JOSEPH JUMP: Python's magic method | Python's double underscore method | Python's magic method
+				
 				// "foreground": "#B200B2" // Original
 				// "foreground": "#ff00ff" // Brighter whatever color this is
 				"foreground": "#ff59ff" // Brighter whatever color this is
@@ -2791,9 +2796,11 @@ Notes:
 				"foreground": "#6796E6"
 			}
 		},
-
-
 		{
+			/* 
+			Fall back for anyt textmate scope of "storage" 
+			
+			*/
 			"scope": [
 				"storage"
 			],
@@ -3081,6 +3088,7 @@ Notes:
 			"scope": "token.error-token",
 			"settings": {
 				"foreground": "#F44747"
+				// "foreground": "#ff0000", // Testing
 			}
 		},
 		{
