@@ -56,7 +56,7 @@ Notes:
 		"editor.findMatchBorder": "#00FF00CC", // Green at 80% opacity // Search match selected border
 		"editor.findMatchHighlightBackground": "#ff000040", // Red at 25% opacity // Search match background
 		"editor.findMatchHighlightBorder": "#ff0000CC", // Red at 80% opacity // Search match border
-		"editor.findRangeHighlightBackground": "#008cff", // FIXME: IDK WAHT THIS ONE IS
+		"editor.findRangeHighlightBackground": "#00FF001A", // FIXME: IDK WAHT THIS ONE IS
 		"editor.foreground": "#ffffff",
 		"editor.inactiveSelectionBackground": "#ffffff1A", // White at 10% opacity // The text that you highlighted when inactive
 		"editor.lineHighlightBackground": "#ffffff0D", // White at 5% opacity // Highlight for the current line you are on
