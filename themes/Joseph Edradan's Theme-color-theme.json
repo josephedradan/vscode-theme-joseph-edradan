@@ -96,7 +96,8 @@ Notes:
 		"menu.foreground": "#fffa99",
 
 		"panel.background": "#000000",
-		"panel.border": "#ff0000",
+		"panel.border": "#ff0000",  // The panel border where the terminal is 
+		// "panel.border": "#33c5ff",  // The panel border where the terminal is 
 		"panelTitle.activeBorder": "#ff0000",
 		"panelTitle.activeForeground": "#ffffff",
 		"peekView.border": "#0000ff",
