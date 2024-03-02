@@ -56,15 +56,15 @@ Notes:
 		"editor.findMatchBorder": "#00FF00CC", // Green at 80% opacity // Search match selected border
 		"editor.findMatchHighlightBackground": "#ff000040", // Red at 25% opacity // Search match background
 		"editor.findMatchHighlightBorder": "#ff0000CC", // Red at 80% opacity // Search match border
-		"editor.findRangeHighlightBackground": "#3a3a3a", // IDK
+		"editor.findRangeHighlightBackground": "#008cff", // FIXME: IDK WAHT THIS ONE IS
 		"editor.foreground": "#ffffff",
 		"editor.inactiveSelectionBackground": "#ffffff1A", // White at 10% opacity // The text that you highlighted when inactive
 		"editor.lineHighlightBackground": "#ffffff0D", // White at 5% opacity // Highlight for the current line you are on
 		"editor.rangeHighlightBackground": "#ffffff1A", // White at 10% opacity // Highlight not made by you, but made by some other system
 		"editor.selectionBackground": "#ffffff33", // White at 20% opacity // The text that you highlighted's background 
 		"editor.selectionForeground": "#ffffff80", // White at 50% opacity // The text that you highlighted's foreground
-		"editor.selectionHighlightBackground": "#FFFF004D", // Yellow at 30% opacity // When your highlighted text is found elsewhere 
-		"editor.wordHighlightBackground": "#575757",
+		"editor.selectionHighlightBackground": "#FFFF0059", // Yellow at 35% opacity // Text that is similar to what you selected's highlight background via ctrl + w or a lot with shift arrow
+		"editor.wordHighlightBackground": "#0000ff4D", // Blue at 25% // WHen you click on a variable (IT IS NOT HIGHLIGHTING)
 		"editorBracketMatch.background": "#ff0000",
 		"editorCursor.background": "#5f3b23",
 		"editorCursor.foreground": "#ffffff",
