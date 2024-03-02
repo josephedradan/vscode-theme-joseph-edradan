@@ -2805,7 +2805,10 @@ Notes:
 				"storage"
 			],
 			"settings": {
-				"foreground": "#CE1919"
+				// "foreground": "#CE1919",
+				// "foreground": "#ff0000", // Testing
+				"foreground": "#FF8420", // Default to this orange
+
 			}
 		},
 		{
