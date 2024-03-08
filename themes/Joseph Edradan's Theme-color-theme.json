@@ -48,8 +48,8 @@ Notes:
 		"button.background": "#222222", // TAGS: BACKGROUND 2
 		"button.hoverBackground": "#333333", // TAGS: HOVER COLOR
 
-		"debugToolBar.background": "#191936",
-		"debugToolBar.border": "#191936",
+		"debugToolBar.background": "#000000",
+		"debugToolBar.border": "#000000",
 		"dropdown.background": "#000000",
 		"dropdown.border": "#999999",
 		"editor.background": "#000000",
@@ -90,9 +90,10 @@ Notes:
 		"input.placeholderForeground": "#a6a6a6",
 		
 		// "list.activeSelectionBackground": "#222222", // TAGS: BACKGROUND 2
-		"list.activeSelectionBackground": "#33c5ff40", // TAGS: BACKGROUND 2
+		"list.activeSelectionBackground": "#33c5ff4D", // TAGS: BACKGROUND 2  // #33c5ff at 30% opacity // This is any list selected or automatic selected via hovered over   
 		"list.activeSelectionForeground": "#ffffff", // Selected items in a list
-		"list.dropBackground": "#666666",  // When you move an item in a list
+		// "list.dropBackground": "#666666",  // When you move an item in a list
+		"list.dropBackground": "#33c5ff4D",  // When you move an item in a list
 		"list.hoverBackground": "#333333", // TAGS: HOVER COLOR
 
 		// Menu when you click one of the buttons at the top
@@ -110,7 +111,7 @@ Notes:
 		"panelTitle.activeForeground": "#ffffff",
 		"peekView.border": "#0000ff",
 		// "peekViewEditor.background": "#222222", // TAGS: BACKGROUND 2
-		"peekViewEditor.background": "#33c5ff40", // TAGS: BACKGROUND 2
+		"peekViewEditor.background": "#33c5ff4D", // TAGS: BACKGROUND 2  // #33c5ff at 30% opacity
 		"peekViewEditorGutter.background": "#00074b",
 		"peekViewResult.background": "#090b13",
 		"peekViewResult.fileForeground": "#7998fd",
