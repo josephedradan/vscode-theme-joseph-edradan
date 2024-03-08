@@ -98,11 +98,15 @@ Notes:
 		// Menu when you click one of the buttons at the top
 		"menu.background": "#000000",
 		"menu.foreground": "#ffffff",
-
+		
+		// TERMINAL RELATED STUFF
 		"panel.background": "#000000",
-		"panel.border": "#ff0000",  // The panel border where the terminal is 
+		// "panel.border": "#00FF00",  // The panel border where the terminal is 
+		// "panel.border": "#ff0000",  // The panel border where the terminal is 
 		// "panel.border": "#33c5ff",  // The panel border where the terminal is 
-		"panelTitle.activeBorder": "#ff0000",
+		"panel.border": "#000000",  // The panel border where the terminal is 
+		// "panelTitle.activeBorder": "#ff0000", // The panel tabs's borders
+		"panelTitle.activeBorder": "#00FF00", // The panel tabs's borders
 		"panelTitle.activeForeground": "#ffffff",
 		"peekView.border": "#0000ff",
 		// "peekViewEditor.background": "#222222", // TAGS: BACKGROUND 2
@@ -138,7 +142,7 @@ Notes:
 		
 		// The tabs you see in you file editor area (The tabs you see on top of files that you are editing)
 		"tab.activeBackground": "#000000",
-		"tab.activeBorder": "#33c5ff",  // The color below the active tab
+		"tab.activeBorder": "#00FF00",  // The color below the active tab
 		"tab.activeForeground": "#ffffff",
 		"tab.border": "#000000",
 		"tab.hoverBackground": "#222222", // TAGS: SIDE BAR TAB, BACKGROUND 3, FILE TAB
