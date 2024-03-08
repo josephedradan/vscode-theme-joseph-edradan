@@ -26,11 +26,6 @@
         "label": "Joseph Edradan's Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Joseph Edradan's Theme-color-theme.json"
-      },
-      {
-        "label": "Joseph Edradan's Theme testing",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Joseph Edradan's Theme-color-theme-testing.json"
       }
     ]
   }
