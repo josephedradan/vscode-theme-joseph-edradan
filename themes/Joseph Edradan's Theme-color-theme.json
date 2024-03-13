@@ -105,7 +105,9 @@ Notes:
 		// "panel.border": "#00FF00",  // The panel border where the terminal is 
 		// "panel.border": "#ff0000",  // The panel border where the terminal is 
 		// "panel.border": "#33c5ff",  // The panel border where the terminal is 
-		"panel.border": "#000000",  // The panel border where the terminal is 
+		// "panel.border": "#000000",  // The panel border where the terminal is 
+		"panel.border": "#333333",  // The panel border where the terminal is 
+		// "panel.border": "#666666",  // The panel border where the terminal is 
 		// "panelTitle.activeBorder": "#ff0000", // The panel tabs's borders
 		"panelTitle.activeBorder": "#00FF00", // The panel tabs's borders
 		"panelTitle.activeForeground": "#ffffff",
