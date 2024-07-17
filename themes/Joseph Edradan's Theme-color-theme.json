@@ -2126,14 +2126,18 @@ Notes:
 				"keyword.other.special-method.dockerfile",
 				
 				// Javascript
+				// "meta.for.js",  // This is the variable next to const in a "for of" loop
 				"storage.type.class.js",
 				"storage.type.interface.js",
+				"keyword.operator.of.js",
 				"keyword.operator.new.js.js",
 				"keyword.operator.cast.js.js",
-				"keyword.operator.sizeof.js.js",				
+				"keyword.operator.sizeof.js.js",
 				"punctuation.separator.comma.js",				
 				"keyword.operator.expression.js.js",
 				"punctuation.terminator.statement.js",								
+				"keyword.control.loop.js",		
+
 
 				// Json
 				"punctuation.separator.element.json",
@@ -2260,6 +2264,31 @@ Notes:
 
 				/* 
 				########################################
+				JavaScirpt Section
+				########################################
+				*/
+				"support.function.console.js",  // JavaScript builtin functions called (e.g. ".log" ".error")
+				"entity.name.type.instance.js",  // JavaScript new instance 
+				"entity.name.function.method.js",  // JavaScript methods defiend
+				"entity.name.function.js",  // JavaScript methods called / functions called  // THIS IS VERY AGGRESSIVE
+
+				// "entity.name.class.js",  // JavaScript Class  // Do not use this because this will color the class name definition
+				
+				"keyword.operator.typeof.js",  // JavaScript function "typeof"
+
+				/*  
+				####################
+				Node.js Related 
+				####################
+				*/
+
+				"support.class.node.js", // JavaScript Node.js .Server
+				"support.type.object.module.js", // JavaScript's module's .exports  (module.exports)
+
+				// "keyword.operator.accessor.js",  // JavaScript "module" for example
+			
+				/* 
+				########################################
 				Java Section
 				########################################
 				*/
@@ -2305,10 +2334,11 @@ Notes:
 				
 				
 				/* 
-				####################
+				########################################
+				Python Section
+				########################################
 				*/
 				
-				// Python
 				// "entity.name.type.class.python", // Python Class Name
 				"entity.name.function.python",  // Python Function defined, Python Method defined, NO BUILTIN FUNCTIONS  // YOU WANT THIS
 				"meta.function-call.generic.python", // Python Function called, Python Method called, NO BUILTIN CALLED  // YOU WANT THIS
@@ -2327,8 +2357,11 @@ Notes:
 				// "meta.item-access.arguments.python", // Python's type hint excluding the first outer type hint // Also includes dictionary structure
 				// "meta.item-access.python", // Python's type hint // Also includes dictionary structure
 
-				// TESTING BELOW
-
+				/* 
+				########################################
+				TESTING THE BELOW
+				########################################
+				*/
 				
 				// "entity.name.function",
 				// "support.function",
@@ -2418,7 +2451,9 @@ Notes:
 		Special keywords
 			Notes:
 				Python Built-ins
+				// JavaScript Built-ins
 				Programming primitives
+
 		####################################################################################################
 		*/
 		{
@@ -2432,6 +2467,10 @@ Notes:
 				// The below 2 don't do shit
 				// "meta.item-access.arguments.python",
 				// "meta.item-access.python",
+				
+				// JavaScript
+				// "support.function.console.js", // JavaScript builtin functions called (e.g. ".log" ".error")
+				
 
 				// Python
 				"entity.other.inherited-class.python",
@@ -2463,7 +2502,7 @@ Notes:
 				// "storage.type.token.java",
 				// "storage.type.generic.java",
 				// "storage.type.annotation.java",
-				"storage.type.primitive.java", // JOSEPH JAVA TYPE 1 
+				"storage.type.primitive.java", // JOSEPH JAVA TYPE 1 // WARNING: THIS WILL AFFECT JavaScirpt's "double"
 				// "storage.type.object.array.java", // JOSEPH JAVA TYPE 1  // This will color any primitive array which is not what you want
 				"storage.type.primitive.array.java", // JOSEPH JAVA TYPE 1 
 
