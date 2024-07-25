@@ -2653,9 +2653,11 @@ Notes:
 		},
 		{
 			"scope": [
-				"string.quoted",
+				"string.quoted",  // TOO AGGRESSIVE, WILL MAKE THE ENTIRE STRING THE SAME COLOR WHICH WILL IGNORE CUSTOM STRING COLORS FOR INTEGRATED VARIABLES IN THE STRING.
+				"entity.quasi.element.js",  // THIS ONE INCLUDES THE VARIABLE IN THE STRING AS WELL AS THE SYNTAX FOR IT (A LITTLE BIT TO AGGRESSIVE).
 				"text.xml string",
 				"source.groovy.embedded",
+				"string.quoted.template.js",  // TOO AGGRESSIVE
 				"string.quoted.single.js",
 				"string.quoted.double.js",
 				"string.quoted.double.json",
@@ -2669,6 +2671,33 @@ Notes:
 				"foreground": "#84af6d", // Darker whatever the original color was
 			}
 		},
+		{
+			"scope": [
+				// "variable.other.readwrite.js",
+				"entity.quasi.element.js",
+				// "string.quoted.template.js",
+			],
+			"settings": {
+				// JOSEPH JUMP: TEMPLATE STRING SYNTAX | F STRINGS SYNTAX
+				"foreground": "#FFC66D", // Original // Current
+
+			}
+		},
+		{
+			"scope": [
+				"variable.other.readwrite.js",
+			],
+			"settings": {
+				// JOSEPH JUMP: TEMPLATE STRING | F STRINGS
+				// JOSEPH JUMP: Python's normal variable color  // VARIABLE JUMP
+				// "foreground": "#A9B7C6", // Original
+				// "foreground": "#c1ccd8", // Brighter
+				// "foreground": "#cfdae7", // Brighter
+				"foreground": "#d7e2f0", // Brighter // Current
+				// "foreground": "#e5f0ff", // Brighter // Too much 
+			}
+		},
+		
 		{
 			"scope": [
 				"comment.block.documentation",
