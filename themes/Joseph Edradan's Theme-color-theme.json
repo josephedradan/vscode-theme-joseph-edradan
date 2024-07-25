@@ -1990,10 +1990,11 @@ Notes:
 				"storage.modifier.import.java",
 				"storage.modifier.package.java",
 				
-				"punctuation.definition.template-expression.end.js",
-				"punctuation.definition.template-expression.end.ts",
-				"punctuation.definition.template-expression.begin.ts",
-				"punctuation.definition.template-expression.begin.js",
+				// THE BELOW ARE JS AND TS STRING TEMPLATE SYNTAX 
+				// "punctuation.definition.template-expression.end.js",
+				// "punctuation.definition.template-expression.end.ts",
+				// "punctuation.definition.template-expression.begin.ts",
+				// "punctuation.definition.template-expression.begin.js",
 
 				// Other stuff idk yet...
 				// "variable", // VERY AGGRESSIVE
@@ -2275,7 +2276,7 @@ Notes:
 				// "entity.name.class.js",  // JavaScript Class  // Do not use this because this will color the class name definition
 				
 				"keyword.operator.typeof.js",  // JavaScript function "typeof"
-
+					
 				/*  
 				####################
 				Node.js Related 
@@ -2287,6 +2288,20 @@ Notes:
 
 				// "keyword.operator.accessor.js",  // JavaScript "module" for example
 			
+				/* 
+				########################################
+				TypeScirpt Section
+				########################################
+				*/
+				"entity.name.type.ts", // TypeScript Called/Used Interfaces (Not defined Interfaces)
+
+				"entity.name.function.ts", // Functions
+				"support.type",
+
+				// "entity.other.attribute-name", // Idk
+				
+				
+
 				/* 
 				########################################
 				Java Section
@@ -2339,7 +2354,7 @@ Notes:
 				########################################
 				*/
 				
-				// "entity.name.type.class.python", // Python Class Name
+				"entity.name.type.class.python", // Python Class Name
 				"entity.name.function.python",  // Python Function defined, Python Method defined, NO BUILTIN FUNCTIONS  // YOU WANT THIS
 				"meta.function-call.generic.python", // Python Function called, Python Method called, NO BUILTIN CALLED  // YOU WANT THIS
 
@@ -2473,10 +2488,10 @@ Notes:
 				
 
 				// Python
-				"entity.other.inherited-class.python",
+				// "entity.other.inherited-class.python",  // You don't want to have the inherited class to have color
 				"meta.class.inheritance support.type.exception.python",
-				"meta.function-call support.function.builtin.python", // Python print
-				"meta.function-call.arguments support.type.python", // Python type
+				"meta.function-call support.function.builtin.python",  // Python print
+				"meta.function-call.arguments support.type.python",  // Python type
 				"meta.item-access meta.item-access.arguments support.type.python",
 				"source.python meta.function-call support.function.builtin",
 				"source.python meta.function-call.arguments support.type",
@@ -2521,6 +2536,15 @@ Notes:
 				// "foreground": "#a0a0ff", // Bright, but a little too much no?
 			}
 		},
+				/*
+		####################################################################################################
+		Attributes and Properties 
+			Notes:
+				Python Object Attributes
+				JSON Attriubets
+				JavaScript Object Properties		
+		####################################################################################################
+		*/
 		{
 			"scope": [
 				// "variable",
@@ -2542,7 +2566,7 @@ Notes:
 
 				"variable.css",
 				"variable.other.less",
-				// "variable.other.property", // Programming language object.property, Python Constant, Python attribute // VERY AGGRESSIVE
+				// "variable.other.property", // Programming language object.property, Python Constant, Python Object Attribute // VERY AGGRESSIVE
 				"variable.scss",
 
 				// JSON
@@ -2555,7 +2579,13 @@ Notes:
 				// JavaScript
 				"variable.other.property.js", // JavaScript object.property
 				"variable.other.object.property.js", // JavaScript object.property
-				"meta.object.member variable.other.property.js", // JavaScript object.property
+				"meta.object.member variable.other.property.js",  // JavaScript object.property
+
+				// TypeScirpt
+				"variable.other.property.ts", // JavaScript object.property
+				"variable.other.object.property.ts", // JavaScript object.property
+				"meta.object.member variable.other.property.ts",  // JavaScript object.property
+
 			],
 			"settings": {
 				// JOSEPH JUMP: Python's context manager name | JSON key
@@ -2661,9 +2691,14 @@ Notes:
 				"string.quoted.single.js",
 				"string.quoted.double.js",
 				"string.quoted.double.json",
+
+				"string.template.ts",  // TypeScirpt string
+
 				"punctuation.definition.string.end.python",
 				"punctuation.definition.string.begin.python",
 				"string.quoted constant.character.escape.env"
+
+				
 			],
 			"settings": {
 				// JOSEPH JUMP: Python's string | JOSEPH STRING 1
@@ -2674,8 +2709,17 @@ Notes:
 		{
 			"scope": [
 				// "variable.other.readwrite.js",
-				"entity.quasi.element.js",
 				// "string.quoted.template.js",
+				// "punctuation.definition.string.template.end.ts",
+
+				// "punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.string.template.end.ts",  // This is the ending Qutation mark in a TypeScript String
+				"punctuation.definition.template-expression.begin",
+				"punctuation.definition.template-expression.end",
+
+				"entity.quasi.element.js"
+				// "string.template.ts"
+
 			],
 			"settings": {
 				// JOSEPH JUMP: TEMPLATE STRING SYNTAX | F STRINGS SYNTAX
@@ -2686,6 +2730,8 @@ Notes:
 		{
 			"scope": [
 				"variable.other.readwrite.js",
+				"variable.other.readwrite.ts",
+
 			],
 			"settings": {
 				// JOSEPH JUMP: TEMPLATE STRING | F STRINGS
@@ -3120,9 +3166,9 @@ Notes:
 		{
 			"scope": [
 				"string.regexp.js",
-				"meta.class variable.other.property.ts",
-				"meta.class variable.object.property.ts",
-				"meta.class variable.other.object.property.ts"
+				// "meta.class variable.other.property.ts",  // Does not work
+				// "meta.class variable.object.property.ts",  // // Does not work
+				// "meta.class variable.other.object.property.ts"  // Does not work
 			],
 			"settings": {
 				"foreground": "#9876AA",
